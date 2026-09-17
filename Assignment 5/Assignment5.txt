@@ -1,0 +1,17 @@
+What I Learned:
+Array lists are Java's equivalent of Python's lists in the sense that they are more flexible than arrays. 
+Arrays require a specified size when they are created, while array lists have a default size of 10 and automatically resize as more objects are added.
+In the cave game project, array lists are used to store all the players and goblins for other functions to loop through.
+More specifically, the game uses lists which differ from array lists as lists aren't actually objects and are instead interfaces which use array lists as a base.
+The advantage of using these over arrays is that they allow the game to spawn bigger amounts of goblins each round without having to make new arrays.
+
+Sources:
+https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html
+https://www.w3schools.com/java/java_list.asp
+
+Program Modification:
+I changed the way that player input works in the combat and rewards phases by creating a dedicated function for ensuring a valid input.
+I disliked that the code would skip over those sections if the player happened to enter something other than 1, 2, or 3, so I made it more fair.
+Now, a while loop will run until the player enters 1, 2, or 3, with some text notifying the player that their input is invalid.
+I only modified the code inside Main.java, as all I needed to make was a utility function that would be accessed within the main loop only.
+I ran into an issue where the scanner inside the main function was outside the scope of my getInput function, so I moved it to the Main class instead so that it can be accessed by both functions.
