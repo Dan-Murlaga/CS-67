@@ -1,0 +1,5 @@
+STU101|Rahul Sharma|Computer Science, Mathematics, Artificial Intelligence|21|3.6
+STU102|Priya Singh|Data Science, Mathematics, Information Technology|20|3.9
+STU103|Aman Kumar|Information Technology, Computer Science|22|3.2
+STU104|Ananya Verma|Artificial Intelligence, Computer Science, Data Science|21|4.1
+STU105|Dan Murlaga|Cybersecurity, Mathematics, Computer Science|19|4.0
